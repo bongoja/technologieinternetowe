@@ -1,0 +1,2 @@
+# technologieinternetowe
+To create a multi-page website using HTML, CSS, and JavaScript, with the goal of providing a seamless user experience and engaging interface for users. The website will consist of several sub-pages, each serving a specific purpose or providing certain functionalities. The project duration is estimated to be at least 20 hours, with a team of 4-5.

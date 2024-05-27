@@ -6,3 +6,7 @@ To create a multi-page website using HTML, CSS, and JavaScript, with the goal of
 temat:
 
 Tablica ofert pracy: Zbuduj witrynę internetową z tablicą ogłoszeń, w której możesz publikować ogłoszenia i aplikować na oferty pracy. Uwzględnij funkcje takie jak wyszukiwanie ofert pracy, filtrowanie według lokalizacji lub branży oraz wznawianie przesyłania.
+
+colors: https://palettes.shecodes.io/palettes/267
+
+presents: Łukasz Maz

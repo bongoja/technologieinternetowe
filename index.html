@@ -1,8 +1,93 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablica ofert pracy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="first-color">
+        <h1>Tablica ofert pracy</h1>
+    </header>
+    
+    <main>
+      <section class="search-filter second-color">
+    	<input type="text" id="search-input" placeholder="Wyszukaj oferty pracy...">
+    	<select id="location-filter">
+        	<option value="">Wszystkie lokalizacje</option>
+        	<option value="warszawa">Warszawa</option>
+        	<option value="kraków">Kraków</option>
+        	<option value="poznań">Poznań</option>
+    	</select>
+    	<select id="industry-filter">
+        	<option value="">Wszystkie branże</option>
+        	<option value="it">IT</option>
+        	<option value="marketing">Marketing</option>
+        	<option value="finanse">Finanse</option>
+    	</select>
+    	<button onclick="filterJobs()">Filtruj</button>	
+     </section>
 
-    </head>
-    <body>
-        
-    </body>
+        <section class="job-list fourth-color" id="job-list">
+    <!-- Przykładowe ogłoszenia o pracę -->
+    <article class="job-item">
+        <h2>Frontend Developer</h2>
+        <p>Lokalizacja: Warszawa</p>
+        <p>Branża: IT</p>
+        <button onclick="applyJob('Frontend Developer')">Aplikuj</button>
+    </article>
+    <article class="job-item">
+        <h2>Specjalista ds. Marketingu</h2>
+        <p>Lokalizacja: Kraków</p>
+        <p>Branża: Marketing</p>
+        <button onclick="applyJob('Specjalista ds. Marketingu')">Aplikuj</button>
+    </article>
+    <article class="job-item">
+        <h2>Specjalista ds. Sprzedaży</h2>
+        <p>Lokalizacja: Kraków</p>
+        <p>Branża: Finanse</p>
+        <button onclick="applyJob('Specjalista ds. Sprzedaży')">Aplikuj</button>
+    </article>
+    <article class="job-item">
+        <h2>Specjalista Service Desk</h2>
+        <p>Lokalizacja: Poznań</p>
+        <p>Branża: IT</p>
+        <button onclick="applyJob('Specjalista Service Desk')">Aplikuj</button>
+    </article>
+    <article class="job-item">
+        <h2>Staż Frontend Developer</h2>
+        <p>Lokalizacja: Poznań</p>
+        <p>Branża: IT</p>
+        <button onclick="applyJob('Staż Frontend Developer')">Aplikuj</button>
+    </article>
+</section>
+    </main>
+    
+    <footer class="third-color">
+        <p>&copy; 2024 Tablica ofert pracy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Modal do przesyłania CV -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Złóż aplikację na stanowisko: <span id="job-title"></span></h2>
+            <form id="application-form">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="resume">CV (PDF):</label>
+                <input type="file" id="resume" name="resume" accept="application/pdf" required>
+                
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

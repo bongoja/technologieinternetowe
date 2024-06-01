@@ -25,10 +25,20 @@ main {
 }
 
 .navbar-container {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: auto;
+    max-width: 120px;
 }
 
 .nav-logo {
@@ -36,11 +46,7 @@ main {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-}
-
-.logo-img {
-    height: auto;
-    max-width: 120px;
+    margin-left: 10px; /* Dostosowanie odstępu między logo a tekstem */
 }
 
 .nav-menu {

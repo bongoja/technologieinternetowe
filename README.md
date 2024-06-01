@@ -10,3 +10,5 @@ Tablica ofert pracy: Zbuduj witrynę internetową z tablicą ogłoszeń, w któr
 colors: https://palettes.shecodes.io/palettes/267
 
 presents: Łukasz Maz
+
+<img width="632" alt="Zrzut ekranu 2024-06-1 o 08 46 24" src="https://github.com/bongoja/technologieinternetowe/assets/29802172/03119d7b-174a-405e-88a0-c7a7c79fea03">
